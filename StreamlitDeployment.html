@@ -310,7 +310,7 @@ sudo yum install nginx</code></pre>
     server_name your_domain.com your_server_ip; # 替換為您的網域或伺服器 IP
 
     location / {
-        proxy_pass http://127.0.0.1:8501; # Streamlit 應用程式運行的位址和連接埠
+        proxy_pass https://127.0.0.1:8501; # Streamlit 應用程式運行的位址和連接埠
         proxy_http_version 1.1;
         proxy_set_header Upgrade $http_upgrade;
         proxy_set_header Connection "upgrade";
